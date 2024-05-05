@@ -13,7 +13,11 @@
 
     <div id="logo1">
 
+<<<<<<< HEAD
         <img src="/Images/OneStop.png" alt="Alternate Text" />
+=======
+        <img src="/Images/one-stop.png" alt="Alternate Text" />
+>>>>>>> 8ff5c753434ae76c7ebac7ea37317e5d9b8a1518
 
     </div>
 

@@ -16,6 +16,7 @@
 
 
       <div class="header">
+<<<<<<< HEAD
           <img src="/Images/OneStop-short.png"/>  
       </div>
 
@@ -25,6 +26,19 @@
         <p>  <a href="Notifications.aspx">Notifications</a></p>
         <p>  <a href="ProvideDecision.aspx">Provide Decision</a></p>
         <p>  <a href="VerifyPayment.aspx">Verify Payment</a></p>
+=======
+          <img src="/Images/flex-logo-blue.png"/>  
+      </div>
+
+      <div class="nav">
+
+       
+        <p>  <a href="#"> Home</a> </p>
+        <p>  <a href="Notifications.aspx">Notifications</a></p>
+        <p>  <a href="ProvideDecision.aspx">Provide Decision</a></p>
+
+
+>>>>>>> 8ff5c753434ae76c7ebac7ea37317e5d9b8a1518
       </div>
 
       <div class="home">

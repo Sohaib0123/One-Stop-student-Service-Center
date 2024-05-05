@@ -15,6 +15,7 @@
 
 
      <div class="header">
+<<<<<<< HEAD
           <img src="/Images/OneStop-short.png"/>  
      </div>
 
@@ -27,6 +28,19 @@
         <p>  <a href="ViewAllRequest.aspx">View All Request</a></p>
         <p>  <a href="IssueDegree.aspx">Issue Degree</a></p>
     </div>
+=======
+          <img src="/Images/flex-logo-blue.png"/>  
+     </div>
+
+     <!--Navigation Bar-->
+ <div class="nav">
+    <p>  <a href="Home.aspx">Home</a> </p>
+    <p>  <a href="Notifications.aspx">Notification</a></p>
+    <p>  <a href="DegreeToken.aspx">Generate Degree Token</a></p>
+    <p>  <a href="ComplaintToken.aspx">Generate Complaint Token</a></p>
+    <p>  <a href="ViewAllRequest.aspx">View All Request</a></p>
+</div>
+>>>>>>> 8ff5c753434ae76c7ebac7ea37317e5d9b8a1518
 
       <div class="home">
 
@@ -52,7 +66,11 @@
     <td style="text-align: center;">
         <div class="selectCourse">
         <h4 id="secTit">Complaint Status: </h4>
+<<<<<<< HEAD
         <asp:DropDownList ID="DropDownList2" runat="server" AutoPostBack="true" >
+=======
+        <asp:DropDownList ID="DropDownList2" runat="server" AutoPostBack="true" OnSelectedIndexChanged="submitButton_Click">
+>>>>>>> 8ff5c753434ae76c7ebac7ea37317e5d9b8a1518
             <asp:ListItem Value="Pending">Pending</asp:ListItem>
             <asp:ListItem Value="Accepted">Accepted</asp:ListItem>
             <asp:ListItem Value="Rejected">Rejected</asp:ListItem>
@@ -65,7 +83,11 @@
         <td style="text-align: center;">
             <div class="selectCourse">
                 <h4 id="secTit">Feedback: </h4>
+<<<<<<< HEAD
                 <asp:TextBox ID="Feedback" runat="server" CssClass="form-control" TextMode="MultiLine" Rows="3" Width="320px" placeholder="Write feedback on the form"/>
+=======
+                <asp:TextBox ID="TextBox1" runat="server" CssClass="form-control" TextMode="MultiLine" Rows="3" Width="320px" placeholder="Write feedback on the form"/>
+>>>>>>> 8ff5c753434ae76c7ebac7ea37317e5d9b8a1518
             </div>
         </td>
     </tr>

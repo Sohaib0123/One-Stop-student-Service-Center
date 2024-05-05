@@ -15,6 +15,7 @@
 
 
      <div class="header">
+<<<<<<< HEAD
           <img src="/Images/OneStop-short.png"/>  
      </div>
 
@@ -25,6 +26,20 @@
         <p>  <a href="#">Provide Decision</a></p>
         <p>  <a href="VerifyPayment.aspx">Verify Payment</a></p>
       </div>
+=======
+          <img src="/Images/flex-logo-blue.png"/>  
+     </div>
+
+            <div class="nav">
+
+ 
+  <p>  <a href="Home.aspx"> Home</a> </p>
+  <p>  <a href="Notifications.aspx">Notifications</a></p>
+  <p>  <a href="ProvideDecision.aspx">Provide Decision</a></p>
+
+
+</div>
+>>>>>>> 8ff5c753434ae76c7ebac7ea37317e5d9b8a1518
 
       <div class="home">
 
@@ -38,8 +53,13 @@
         <td style="text-align: center;">
             <div class="selectCourse">
                <h4 id="secTit">Form ID: </h4>
+<<<<<<< HEAD
                     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:projectConnectionString %>" SelectCommand="SELECT T_ID FROM DegreeToken WHERE T_STATUS IN ('Request is delivered to Finance')"></asp:SqlDataSource>
                     <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource1" DataTextField="T_ID" DataValueField="T_ID" CssClass="selectCourse" AutoPostBack="true" Height="16px">
+=======
+                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:projectConnectionString %>" SelectCommand="SELECT F_ID FROM DegreeIssuanceForm WHERE D_STATUS IN ('Pending', 'Processing')"></asp:SqlDataSource>
+                    <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource1" DataTextField="F_ID" DataValueField="F_ID" CssClass="selectCourse" AutoPostBack="true" Height="16px">
+>>>>>>> 8ff5c753434ae76c7ebac7ea37317e5d9b8a1518
                      </asp:DropDownList>
             </div>
         </td>
@@ -49,11 +69,19 @@
     <td style="text-align: center;">
         <div class="selectCourse">
            <h4 id="secTit">Finance Decision: </h4>
+<<<<<<< HEAD
             <asp:DropDownList ID="DropDownList2" runat="server" AutoPostBack="true" >
     <asp:ListItem Value="Pending">Pending</asp:ListItem>
     <asp:ListItem Value="Accepted">Accepted</asp:ListItem>
     <asp:ListItem Value="Rejected">Rejected</asp:ListItem>
 </asp:DropDownList>
+=======
+            <select id="mySelect">
+    <option value="Pending">Pending</option>
+    <option value="Accepted">Accepted</option>
+    <option value="Rejected">Rejected</option>
+</select>
+>>>>>>> 8ff5c753434ae76c7ebac7ea37317e5d9b8a1518
         </div>
         </td>
 </tr>
@@ -80,6 +108,20 @@
 
                       
                 </div>
+<<<<<<< HEAD
+=======
+
+                <%--<div class="content2" id="cont2" runat="server">
+
+                    <div class="gridRep">
+                        <asp:GridView ID="GridView1" runat="server" CssClass="grid2"></asp:GridView>
+                        <asp:GridView ID="GridView2" runat="server" CssClass="grid2"></asp:GridView>
+
+
+                    </div>
+                </div>--%>
+
+>>>>>>> 8ff5c753434ae76c7ebac7ea37317e5d9b8a1518
                    
           </div>
          

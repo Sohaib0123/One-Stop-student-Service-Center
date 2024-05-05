@@ -23,6 +23,7 @@
 
 
      <div class="header">
+<<<<<<< HEAD
           <img src="/Images/OneStop-short.png"/>  
       </div>
 
@@ -34,6 +35,19 @@
         <p>  <a href="ActivityTracking.aspx">Activity Tracking</a></p>
         <p>  <a href="ReceiveDegree.aspx">Receive Degree</a></p>
     </div>
+=======
+          <img src="/Images/flex-logo-blue.png"/>  
+      </div>
+
+      <div class="nav">
+          <p>  <a href="Home.aspx"> Home</a> </p>
+          <p>  <a href="DegreeForm.aspx">Degree Issuance Form</a></p>
+          <p>  <a href="ComplaintForm.aspx">Complaint Form</a></p>
+          <p>  <a href="ActivityTracking.aspx">Activity Tracking</a></p>
+
+      </div>
+
+>>>>>>> 8ff5c753434ae76c7ebac7ea37317e5d9b8a1518
       <div class="home" id="fbhome">
 
           <div id="courses">
@@ -49,6 +63,7 @@
            <table class="form-table">
     <tr>
         <td><label for="Name">Name of applicant:</label></td>
+<<<<<<< HEAD
         <td><asp:TextBox ID="Name" runat="server" CssClass="form-control" />
                <asp:RegularExpressionValidator 
                 ID="RegularExpressionValidator1" 
@@ -59,6 +74,9 @@
                 Display="Dynamic" 
                 ForeColor="Red" />
         </td>
+=======
+        <td><asp:TextBox ID="Name" runat="server" CssClass="form-control" /></td>
+>>>>>>> 8ff5c753434ae76c7ebac7ea37317e5d9b8a1518
     </tr>
     <tr>
         <td><label for="Address">Address:</label></td>
@@ -66,6 +84,7 @@
     </tr>
     <tr>
         <td><label for="Email">Email:</label></td>
+<<<<<<< HEAD
         <td><asp:TextBox ID="Email" runat="server" CssClass="form-control" />
             <asp:RegularExpressionValidator 
                     ID="RegexValidatorEmail" 
@@ -115,6 +134,21 @@
                 Display="Dynamic" 
                 ForeColor="Red" />
         </td>
+=======
+        <td><asp:TextBox ID="Email" runat="server" CssClass="form-control" /></td>
+    </tr>
+    <tr>
+        <td><label for="CNIC">CNIC:</label></td>
+        <td><asp:TextBox ID="CNIC" runat="server" CssClass="form-control" /></td>
+    </tr>
+    <tr>
+        <td><label for="RollNo">Roll No:</label></td>
+        <td><asp:TextBox ID="RollNo" runat="server" CssClass="form-control" /></td>
+    </tr>
+    <tr>
+        <td><label for="Contact">Contact No:</label></td>
+        <td><asp:TextBox ID="Contact" runat="server" CssClass="form-control" /></td>
+>>>>>>> 8ff5c753434ae76c7ebac7ea37317e5d9b8a1518
     </tr>
 </table>
               <!--For UnderGraduation Students-->
@@ -128,6 +162,7 @@
         <table class="form-table">
     <tr>
         <td><label for="Degree">Degree:</label></td>
+<<<<<<< HEAD
         <td>
             <asp:TextBox ID="Degree" runat="server" CssClass="form-control" />
             <asp:RegularExpressionValidator 
@@ -140,6 +175,9 @@
                   ForeColor="Red" />
 
         </td>
+=======
+        <td><asp:TextBox ID="Degree" runat="server" CssClass="form-control" /></td>
+>>>>>>> 8ff5c753434ae76c7ebac7ea37317e5d9b8a1518
     </tr>
     <tr>
         <td><label for="Faculty">Faculty:</label></td>
@@ -151,6 +189,7 @@
     </tr>
     <tr>
         <td><label for="CGPA">CGPA:</label></td>
+<<<<<<< HEAD
         <td><asp:TextBox ID="CGPA" runat="server" CssClass="form-control" />
               <asp:RangeValidator 
                 ID="RangeValidatorCGPA" 
@@ -163,6 +202,9 @@
                 Display="Dynamic" 
                 ForeColor="Red" />
         </td>
+=======
+        <td><asp:TextBox ID="CGPA" runat="server" CssClass="form-control" /></td>
+>>>>>>> 8ff5c753434ae76c7ebac7ea37317e5d9b8a1518
     </tr>
 </table>
 
@@ -170,6 +212,7 @@
               <!--Check Box-->
             <div class="form-group">
                 <br />
+<<<<<<< HEAD
                 <p id="declare">I solemnly declare that the facts mentioned in the form are correct.<asp:CheckBox ID="MyCheckBox" runat="server" Text=""/>
                     <asp:CustomValidator
                         ID="CustomValidatorDeclaration"
@@ -179,12 +222,19 @@
                         ClientValidationFunction="validateDeclaration"
                         OnServerValidate="CustomValidatorDeclaration_ServerValidate" />
                 </p>
+=======
+                <p id="declare">I solemnly declare that the facts mentioned in the form are correct.<asp:CheckBox ID="MyCheckBox" runat="server" Text=""/></p>
+>>>>>>> 8ff5c753434ae76c7ebac7ea37317e5d9b8a1518
                 <br />
             </div>
 
 
             <div class="form-group">
+<<<<<<< HEAD
                <asp:Button ID="submitButton" runat="server" Text="Submit Feedback" CausesValidation="true" OnClick="submitButton_Click" CssClass="btn btn-primary" />
+=======
+               <asp:Button ID="submitButton" runat="server" Text="Submit Feedback" OnClick="submitButton_Click" CssClass="btn btn-primary" />
+>>>>>>> 8ff5c753434ae76c7ebac7ea37317e5d9b8a1518
             </div>
         </div>
     
@@ -194,12 +244,15 @@
           </form>
     <script src="Scripts/jquery-3.3.1.min.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>
+<<<<<<< HEAD
     <script type="text/javascript">
     function validateDeclaration(sender, args) {
         args.IsValid = document.getElementById('<%= MyCheckBox.ClientID %>').checked;
     }
     </script>
 
+=======
+>>>>>>> 8ff5c753434ae76c7ebac7ea37317e5d9b8a1518
 
           </div>
          

@@ -18,15 +18,30 @@
 
 
      <div class="header">
+<<<<<<< HEAD
           <img src="/Images/OneStop-short.png"/>  
+=======
+          <img src="/Images/flex-logo-blue.png"/>  
+>>>>>>> 8ff5c753434ae76c7ebac7ea37317e5d9b8a1518
       </div>
 
       <!--Navigation Bar-->
       <div class="nav">
+<<<<<<< HEAD
         <p>  <a href="Home.aspx"> Home</a> </p>
         <p>  <a href="#">Notifications</a></p>
         <p>  <a href="ProvideDecision.aspx">Provide Decision</a></p>
       </div>
+=======
+
+ 
+  <p>  <a href="Home.aspx"> Home</a> </p>
+  <p>  <a href="Notifications.aspx">Notifications</a></p>
+  <p>  <a href="ProvideDecision.aspx">Provide Decision</a></p>
+
+
+</div>
+>>>>>>> 8ff5c753434ae76c7ebac7ea37317e5d9b8a1518
 
       <div class="home">
 

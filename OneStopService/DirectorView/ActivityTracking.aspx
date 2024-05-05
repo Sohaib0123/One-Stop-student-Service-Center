@@ -17,6 +17,7 @@
 
 
      <div class="header">
+<<<<<<< HEAD
           <img src="/Images/OneStop-short.png"/>  
       </div>
 
@@ -27,6 +28,18 @@
         <p>  <a href="PendingRequest.aspx">Pending Requests</a></p>
         <p>  <a href="ProcessedRequest.aspx">Processed Requests</a></p>
         <p>  <a href="#">Activity Tracking</a></p>
+=======
+          <img src="/Images/flex-logo-blue.png"/>  
+      </div>
+
+      <!--Navigation Bar-->
+      <div class="nav"> 
+        <p>  <a href="Home.aspx"> Home</a> </p>
+        <p>  <a href="#">Request generated per day</a></p>
+        <p>  <a href="PendingRequest.aspx">Pending Requests</a></p>
+        <p>  <a href="ProcessedRequest.aspx">Processed Requests</a></p>
+        <p>  <a href="ActivityTracking.aspx">Activity Tracking</a></p>
+>>>>>>> 8ff5c753434ae76c7ebac7ea37317e5d9b8a1518
       </div>
 
       <div class="home">

@@ -16,6 +16,7 @@
 
 
       <div class="header">
+<<<<<<< HEAD
           <img src="/Images/OneStop-short.png"/>  
       </div>
 
@@ -28,6 +29,19 @@
         <p>  <a href="ViewAllRequest.aspx">View All Request</a></p>
         <p>  <a href="IssueDegree.aspx">Issue Degree</a></p>
     </div>
+=======
+          <img src="/Images/flex-logo-blue.png"/>  
+      </div>
+
+       <!--Navigation Bar-->
+        <div class="nav">
+            <p>  <a href="Home.aspx">Home</a> </p>
+            <p>  <a href="Notifications.aspx">Notification</a></p>
+            <p>  <a href="DegreeToken.aspx">Generate Degree Token</a></p>
+            <p>  <a href="ComplaintToken.aspx">Generate Complaint Token</a></p>
+            <p>  <a href="ViewAllRequest.aspx">View All Request</a></p>
+        </div>
+>>>>>>> 8ff5c753434ae76c7ebac7ea37317e5d9b8a1518
 
       <div class="home">
 
@@ -37,6 +51,7 @@
                  <h2>Personal Information</h2> 
                  </div>
 
+<<<<<<< HEAD
          <div class="content2">
            <asp:FormView ID="FormView2" runat="server" DataSourceID="SqlDataSource2" CssClass="content" HorizontalAlign="Center" CellPadding="5" GridLines="Horizontal">
        <EditItemTemplate>
@@ -127,6 +142,71 @@
            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:projectConnectionString %>" SelectCommand="SELECT U_NAME, U_EMAIL, U_ROLE FROM USERS WHERE (U_EMAIL = (SELECT TOP (1) email FROM loggedInSucessfully ORDER BY loggedTime DESC))"></asp:SqlDataSource>
       </div>
 
+=======
+                 <div class="content">
+                      <%--<asp:FormView ID="FormView2" runat="server" DataSourceID="SqlDataSource2" CssClass="content" HorizontalAlign="Center" CellPadding="5" GridLines="Horizontal">--%>
+                  <EditItemTemplate>
+                      <p>
+                          FULLNAME:
+                          <asp:TextBox ID="FULLNAMETextBox" runat="server" Text='' />
+                      </p>
+                      <p>
+                          EMAIL:
+                          <asp:TextBox ID="EMAILTextBox" runat="server" Text='' />
+                      </p>
+                      <p>
+                          Role:
+                          <asp:TextBox ID="ROLETextBox" runat="server" Text='' />
+                      </p>
+                      <%--<asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
+                      &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />--%>
+                  </EditItemTemplate>
+                  <EditRowStyle HorizontalAlign="Center" VerticalAlign="Middle" />
+                 <%-- <InsertItemTemplate>
+                      FULLNAME:
+                      <asp:TextBox ID="FULLNAMETextBox" runat="server" Text='<%# Bind("FULLNAME") %>' />
+                      <br />
+                      EMAIL:
+                      <asp:TextBox ID="EMAILTextBox" runat="server" Text='<%# Bind("EMAIL") %>' />
+                      <br />
+                      CNIC:
+                      <asp:TextBox ID="CNICTextBox" runat="server" Text='<%# Bind("CNIC") %>' />
+                      <br />
+                      DOB:
+                      <asp:TextBox ID="DOBTextBox" runat="server" Text='<%# Bind("DOB") %>' />
+                      <br />
+                      GENDER:
+                      <asp:TextBox ID="GENDERTextBox" runat="server" Text='<%# Bind("GENDER") %>' />
+                      <br />
+                      PHONENO:
+                      <asp:TextBox ID="PHONENOTextBox" runat="server" Text='<%# Bind("PHONENO") %>' />
+                      <br />
+                      <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
+                      &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+                  </InsertItemTemplate>--%>
+                          <InsertRowStyle HorizontalAlign="Center" VerticalAlign="Middle" />
+                 <%-- <ItemTemplate>
+                      <b>Name:</b>
+                      <asp:Label ID="FULLNAMELabel" runat="server" Text='<%# Bind("FULLNAME") %>' />
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>Email:</b>
+                      <asp:Label ID="EMAILLabel" runat="server" Text='<%# Bind("EMAIL") %>' />
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>CNIC:</b>
+                      <asp:Label ID="CNICLabel" runat="server" Text='<%# Bind("CNIC") %>' />
+                      &nbsp;&nbsp;&nbsp;&nbsp;<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <br />
+                      <b>DOB:</b>
+                      <asp:Label ID="DOBLabel" runat="server" Text='<%# Bind("DOB") %>' />
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Gender:</b>
+                      <asp:Label ID="GENDERLabel" runat="server" Text='<%# Bind("GENDER") %>' />
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>Contact:</b>
+                      <asp:Label ID="PHONENOLabel" runat="server" Text='<%# Bind("PHONENO") %>' />
+                      <br />
+                  </ItemTemplate>--%>
+                  <RowStyle HorizontalAlign="Center" VerticalAlign="Middle" />
+              </asp:FormView>
+                      <%--<asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:projectConnectionString %>" SelectCommand="SELECT FULLNAME, EMAIL, CNIC, DOB, GENDER, PHONENO FROM USERS WHERE (EMAIL = (SELECT TOP (1) email FROM loggedInSucessfully ORDER BY loggedTime DESC))"></asp:SqlDataSource>--%>
+                 </div>
+>>>>>>> 8ff5c753434ae76c7ebac7ea37317e5d9b8a1518
 
            </div>
 

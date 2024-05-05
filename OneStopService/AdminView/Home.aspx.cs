@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
+<<<<<<< HEAD
 //public class Admin 
 //{
 //    public void ResetUserPassword(int user)
@@ -20,6 +21,8 @@ using System.Web.UI.WebControls;
 //    }
 //}
 
+=======
+>>>>>>> 8ff5c753434ae76c7ebac7ea37317e5d9b8a1518
 public partial class Home :  System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)

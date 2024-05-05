@@ -18,6 +18,7 @@
 
 
      <div class="header">
+<<<<<<< HEAD
           <img src="/Images/OneStop-short.png"/>  
       </div>
 
@@ -30,6 +31,19 @@
         <p>  <a href="ViewAllRequest.aspx">View All Request</a></p>
         <p>  <a href="IssueDegree.aspx">Issue Degree</a></p>
     </div>
+=======
+          <img src="/Images/flex-logo-blue.png"/>  
+      </div>
+
+      <!--Navigation Bar-->
+ <div class="nav">
+    <p>  <a href="Home.aspx">Home</a> </p>
+    <p>  <a href="Notifications.aspx">Notification</a></p>
+    <p>  <a href="DegreeToken.aspx">Generate Degree Token</a></p>
+    <p>  <a href="ComplaintToken.aspx">Generate Complaint Token</a></p>
+    <p>  <a href="ViewAllRequest.aspx">View All Request</a></p>
+</div>
+>>>>>>> 8ff5c753434ae76c7ebac7ea37317e5d9b8a1518
 
       <div class="home">
 

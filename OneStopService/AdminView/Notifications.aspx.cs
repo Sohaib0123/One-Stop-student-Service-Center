@@ -2,8 +2,11 @@
 using System.Data;
 using System.Data.SqlClient;
 using System.Web.UI.WebControls;
+<<<<<<< HEAD
 using Microsoft.SqlServer.Server;
 using Xceed.Wpf.Toolkit.Primitives;
+=======
+>>>>>>> 8ff5c753434ae76c7ebac7ea37317e5d9b8a1518
 
 public partial class _Default : System.Web.UI.Page
 {
@@ -61,7 +64,11 @@ public partial class _Default : System.Web.UI.Page
         using (SqlConnection connection = new SqlConnection(connectionString))
         {
             //Query to select Token_ID, Date, Email, Status
+<<<<<<< HEAD
             string query = "SELECT df.F_ID AS FormID, u.U_EMAIL AS UserEmail, df.D_SUBMISSION AS SubmissionDate, dt.T_STATUS AS FormStatus FROM DegreeIssuanceForm df INNER JOIN DegreeToken dt ON dt.F_ID = df.F_ID INNER JOIN Users u ON df.U_ID = u.U_ID";
+=======
+            string query = "SELECT df.F_ID AS FormID, u.U_EMAIL AS UserEmail, df.D_SUBMISSION AS SubmissionDate, df.D_STATUS AS FormStatus FROM DegreeIssuanceForm df INNER JOIN Users u ON df.U_ID = u.U_ID";
+>>>>>>> 8ff5c753434ae76c7ebac7ea37317e5d9b8a1518
 
             using (SqlCommand command = new SqlCommand(query, connection))
             {

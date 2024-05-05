@@ -8,6 +8,7 @@ using System.Data.SqlClient;
 using System.Windows;
 using Xceed.Wpf.Toolkit;
 
+<<<<<<< HEAD
 public class User
 {
     public int ID { get; set; }
@@ -26,6 +27,8 @@ public class User
 }
 
 
+=======
+>>>>>>> 8ff5c753434ae76c7ebac7ea37317e5d9b8a1518
 public partial class _Default : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
@@ -33,15 +36,70 @@ public partial class _Default : System.Web.UI.Page
 
     }
 
+<<<<<<< HEAD
+=======
+
+
+    //private void Login_Click(object sender, EventArgs e)
+    //{
+    //    SqlConnection conn = new SqlConnection("Data Source=DESKTOP-17A1195/SQLEXPRESS;Initial Catalog=SEProject;Integrated Security=True");
+    //    conn.Open();
+
+
+    //    //MessageBox.Show("Connection Open");
+    //    SqlCommand cm;
+    //    string un = Request.Form["loginEmail"];
+    //    string pass = Request.Form["loginPass"];
+    //    string query = "Select* from USERS where EMAIL = '" + un + "' and U_PASSWORD = '" + pass + "'";
+
+
+    //    cm = new SqlCommand(query, conn);
+
+    //    SqlDataReader res = cm.ExecuteReader();
+
+    //    if (!res.HasRows)
+    //    {
+
+    //        Response.Write("No such username found");
+
+
+    //    }
+    //    else
+    //    {
+
+    //        Response.Write("Successfully logged in!");
+    //        // Server.Transfer("Home.aspx");
+    //    }
+
+    //    Console.WriteLine("After method call, value of res : {0}", res);
+    //    cm.Dispose();
+    //    conn.Close();
+    //    //this.Close();
+    //}
+
+>>>>>>> 8ff5c753434ae76c7ebac7ea37317e5d9b8a1518
     protected void Button1_Click(object sender, EventArgs e)
     {
         SqlConnection conn = new SqlConnection("Data Source=DESKTOP-17A1195\\SQLEXPRESS;Initial Catalog=SEProject;Integrated Security=True");
         conn.Open();
+<<<<<<< HEAD
 
+=======
+        // Response.Redirect("Home.aspx");
+
+        //MessageBox.Show("Connection Open");
+>>>>>>> 8ff5c753434ae76c7ebac7ea37317e5d9b8a1518
         SqlCommand cm;
         string email = Request.Form["emailInput"];
         string pass = Request.Form["loginPass"];
 
+<<<<<<< HEAD
+=======
+        // Response.Write(pass);
+        //  Response.Write(email);
+
+
+>>>>>>> 8ff5c753434ae76c7ebac7ea37317e5d9b8a1518
         Console.WriteLine(email);
         Console.WriteLine(pass);
 
@@ -122,6 +180,7 @@ public partial class _Default : System.Web.UI.Page
             string role = result.ToString();
 
             if (role == "Student")
+<<<<<<< HEAD
                 Response.Redirect("Home.aspx", false);
             else if (role == "FYP")
                 Response.Redirect("/FYPView/Home.aspx", false);
@@ -132,6 +191,17 @@ public partial class _Default : System.Web.UI.Page
             else if (role == "Director")
                 Response.Redirect("/DirectorView/Home.aspx", false);
 
+=======
+                Server.Transfer("Home.aspx");
+            else if (role == "FYP")
+                Server.Transfer("/FYPView/Home.aspx");
+            else if (role == "Admin")
+                Server.Transfer("/AdminView/Home.aspx");
+            else if (role == "Finance")
+                Server.Transfer("/FinanceView/Home.aspx");
+            else if (role == "Director")
+                Server.Transfer("/DirectorView/Home.aspx");
+>>>>>>> 8ff5c753434ae76c7ebac7ea37317e5d9b8a1518
 
         }
 

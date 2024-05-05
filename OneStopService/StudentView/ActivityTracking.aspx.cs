@@ -3,6 +3,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Web.UI.WebControls;
 
+<<<<<<< HEAD
 //public class Notification
 //{
 //    public int NotificationID { get; set; }
@@ -16,6 +17,8 @@ using System.Web.UI.WebControls;
 //}
 
 
+=======
+>>>>>>> 8ff5c753434ae76c7ebac7ea37317e5d9b8a1518
 public partial class _Default : System.Web.UI.Page
 {
     SqlConnection conn = new SqlConnection("Data Source=DESKTOP-17A1195\\SQLEXPRESS;Initial Catalog=SEProject;Integrated Security=True");
@@ -31,6 +34,22 @@ public partial class _Default : System.Web.UI.Page
     private void MenuItemBinding()
     {
         conn.Open();
+<<<<<<< HEAD
+=======
+        //string query = "Select CCODE from Courses inner join STUDENT_COURSES on STUDENT_COURSES.COURSE_ID = Courses.C_ID where STUDENT_COURSES.STUDENT_ID = (select U_ID from USERS where EMAIL = (select top 1 email from loggedInSucessfully order by loggedTime desc))";
+        //DataSet ds = new DataSet();
+        //SqlDataAdapter da = new SqlDataAdapter(query, conn);
+        //DataTable dttc = new DataTable();
+        //da.Fill(ds);
+        //dttc = ds.Tables[0];
+
+        //Menu1.Items.Clear(); // Clear existing items before adding new ones
+
+        //foreach (DataRow row in dttc.Rows)
+        //{
+        //    Menu1.Items.Add(new MenuItem(row["CCODE"].ToString()));
+        //}
+>>>>>>> 8ff5c753434ae76c7ebac7ea37317e5d9b8a1518
 
         GridView gridView = new GridView();
         gridView.ID = "dynamicGridView"; // Set a unique ID for the grid
@@ -58,6 +77,7 @@ public partial class _Default : System.Web.UI.Page
 
         using (SqlConnection connection = new SqlConnection(connectionString))
         {
+<<<<<<< HEAD
             SqlCommand cm, cm1;
 
             string selectuserid = "SELECT U_ID FROM USERS WHERE (U_EMAIL = (SELECT TOP (1) email FROM loggedInSucessfully ORDER BY loggedTime DESC))";
@@ -82,6 +102,13 @@ public partial class _Default : System.Web.UI.Page
             {
 
                 command.Parameters.AddWithValue("@U_ID", userid);
+=======
+            //Query to select Token_ID, Date, Email, Status
+            string query = "SELECT dt.T_ID AS TokenID, u.U_EMAIL AS UserEmail, df.D_SUBMISSION AS SubmissionDate, dt.T_STATUS AS TokenStatus FROM DegreeToken dt INNER JOIN DegreeIssuanceForm df ON dt.F_ID = df.F_ID INNER JOIN Users u ON df.U_ID = u.U_ID;";
+
+            using (SqlCommand command = new SqlCommand(query, connection))
+            {
+>>>>>>> 8ff5c753434ae76c7ebac7ea37317e5d9b8a1518
                 connection.Open();
 
                 using (SqlDataReader reader = command.ExecuteReader())

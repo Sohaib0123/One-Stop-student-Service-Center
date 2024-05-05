@@ -15,6 +15,7 @@
 
 
      <div class="header">
+<<<<<<< HEAD
           <img src="/Images/OneStop-short.png"/>  
      </div>
 
@@ -27,13 +28,34 @@
         <p>  <a href="ViewAllRequest.aspx">View All Request</a></p>
         <p>  <a href="#">Issue Degree</a></p>
     </div>
+=======
+          <img src="/Images/flex-logo-blue.png"/>  
+     </div>
+
+     <!--Navigation Bar-->
+ <div class="nav">
+     <p>  <a href="Home.aspx">Home</a> </p>
+     <p>  <a href="Notifications.aspx">Notification</a></p>
+     <p>  <a href="Token.aspx">Generate Token</a></p>
+     <p>  <a href="ViewAllRequest.aspx">View All Request</a></p>
+ </div>
+>>>>>>> 8ff5c753434ae76c7ebac7ea37317e5d9b8a1518
 
       <div class="home">
 
           <div id="PersonalInformation">
      
                 <div class="title">
+<<<<<<< HEAD
                      <h2>Issuance of Degree</h2>                                     
+=======
+                     <h2>Generate Token</h2>
+                        
+
+                    
+
+                      
+>>>>>>> 8ff5c753434ae76c7ebac7ea37317e5d9b8a1518
                 </div>
               <div class="content2">
                      <table style="margin: 0 auto;">
@@ -41,7 +63,11 @@
         <td style="text-align: center;">
             <div class="selectCourse">
                <h4 id="secTit">Form ID: </h4>
+<<<<<<< HEAD
                     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:projectConnectionString %>" SelectCommand="SELECT F_ID FROM DegreeToken WHERE T_STATUS IN ('Completed')"></asp:SqlDataSource>
+=======
+                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:projectConnectionString %>" SelectCommand="SELECT F_ID FROM DegreeIssuanceForm WHERE D_STATUS IN ('Pending', 'Processing')"></asp:SqlDataSource>
+>>>>>>> 8ff5c753434ae76c7ebac7ea37317e5d9b8a1518
                     <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource1" DataTextField="F_ID" DataValueField="F_ID" CssClass="selectCourse" AutoPostBack="true" Height="16px">
                      </asp:DropDownList>
             </div>
@@ -62,7 +88,11 @@
     <tr>
         <td style="text-align: center;">
                                <div class="form-group">
+<<<<<<< HEAD
    <asp:Button ID="submitButton" runat="server" Text="Issue Degree" OnClick="GenerateButton_Click" CssClass="btn btn-primary" />
+=======
+   <asp:Button ID="submitButton" runat="server" Text="Generate Token" OnClick="submitButton_Click" CssClass="btn btn-primary" />
+>>>>>>> 8ff5c753434ae76c7ebac7ea37317e5d9b8a1518
 </div>
         </td>
     </tr>

@@ -24,6 +24,7 @@
 
 
      <div class="header">
+<<<<<<< HEAD
           <img src="/Images/OneStop-short.png"/>  
       </div>
 
@@ -35,6 +36,19 @@
         <p>  <a href="ActivityTracking.aspx">Activity Tracking</a></p>
         <p>  <a href="ReceiveDegree.aspx">Receive Degree</a></p>
     </div>
+=======
+          <img src="/Images/flex-logo-blue.png"/>  
+      </div>
+
+      <!--Navigation Bar-->
+      <div class="nav">
+            <p>  <a href="Home.aspx"> Home</a> </p>
+            <p>  <a href="DegreeForm.aspx">Degree Issuance Form</a></p>
+            <p>  <a href="ComplaintForm.aspx">Complaint Form</a></p>
+            <p>  <a href="ActivityTracking.aspx">Activity Tracking</a></p>
+
+      </div>
+>>>>>>> 8ff5c753434ae76c7ebac7ea37317e5d9b8a1518
 
       <div class="home" id="fbhome">
 
@@ -50,6 +64,7 @@
            <table class="form-table">
     <tr>
         <td><label for="Name">Name of applicant:</label></td>
+<<<<<<< HEAD
         <td><asp:TextBox ID="Name" runat="server" CssClass="form-control" placeholder="Enter Your Name" />
              <asp:RegularExpressionValidator 
                 ID="RegularExpressionValidator1" 
@@ -99,6 +114,21 @@
                   Display="Dynamic" 
                   ForeColor="Red" />
         </td>
+=======
+        <td><asp:TextBox ID="Name" runat="server" CssClass="form-control" placeholder="Enter Your Name" /></td>
+    </tr>
+    <tr>
+        <td><label for="Email">Email:</label></td>
+        <td><asp:TextBox ID="Email" runat="server" CssClass="form-control" placeholder="example@example.com" /></td>
+    </tr>
+    <tr>
+        <td><label for="RollNo">Roll No:</label></td>
+        <td><asp:TextBox ID="RollNo" runat="server" CssClass="form-control" placeholder="Enter Your RollNo" /></td>
+    </tr>
+    <tr>
+        <td><label for="Department">Department:</label></td>
+        <td><asp:TextBox ID="Department" runat="server" CssClass="form-control" placeholder="Enter Your Department"/></td>
+>>>>>>> 8ff5c753434ae76c7ebac7ea37317e5d9b8a1518
     </tr>
     <tr>
         <td><label for="Complain_Description">Description:</label></td>
